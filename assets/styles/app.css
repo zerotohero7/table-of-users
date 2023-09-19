@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.bg-blue{
+    background-color: blue;
+}
+
+.display-block{
+    display:block;
+}
+
+body {
+    background-color: lightgray;
+}
+
+

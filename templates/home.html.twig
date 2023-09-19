@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+{% block title 'Home' %}
+{% block body %}
+
+<div class="flex flex-wrap justify-around ">
+{% for item in data %}
+  <div class=" bg-white m-4 p-3">
+    <h1 class="font-bold uppercase text-center" >{{item.name}}</h1>
+    <img class=" m-auto mt-2 mb-2 w-40 h-40 " src="https://t4.ftcdn.net/jpg/02/29/75/83/360_F_229758328_7x8jwCwjtBMmC6rgFzLFhZoEpLobB6L8.jpg">
+    <p class="text-center">{{item.address.street}} ,{{item.address.suite}} ,{{item.address.city}}</p>
+  </div>
+{% endfor %}
+</div>
+  
+{% endblock %}  
